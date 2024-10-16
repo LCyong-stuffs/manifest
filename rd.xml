@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="lc"
+           fetch="https://github.com/LCyong-stuffs"
+           revision="uvite" />
+
   <remote  name="rd"
            fetch="https://github.com/rd-stuffs"
            revision="uvite" />
@@ -86,7 +90,7 @@
   <project path="toolchain/pgo-profiles" name="android_toolchain_pgo-profiles" remote="rd" />
 
   <!-- Vendor -->
-  <project path="vendor/aospa" name="android_vendor_aospa" remote="rd" >
+  <project path="vendor/aospa" name="android_vendor_aospa" remote="lc" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <project path="vendor/aospa/translations" name="android_vendor_aospa_translations" remote="rd" />
