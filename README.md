@@ -41,7 +41,7 @@ $ cd WORKSPACE
 
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
-$ repo init --depth=1 -u https://github.com/rd-stuffs/manifest -b uvite
+$ repo init --depth=1 -u https://github.com/LCyong-stuffs/manifest -b uvite
 ```
 
 ### Downloading the source tree ###
@@ -85,7 +85,7 @@ automatically. As the device value, you just feed it with the device codename (f
 # Go to the root of the source tree...
 $ cd WORKSPACE
 # ...and run the builder tool.
-$ ./rom-build.sh DEVICE
+$ ./rom-build.sh alioth
 ```
 
 ## Submitting Patches ##
