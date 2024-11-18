@@ -56,6 +56,11 @@
   <project path="external/zlib" name="android_external_zlib" remote="rd" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
 
+  <!-- External (Fonts) -->
+  <project path="external/noto-fonts" name="android_external_noto-fonts" remote="rd" />
+  <project path="external/google-fonts/cutive-mono" name="android_external_google-fonts_cutive-mono" remote="rd" revision="topaz" />
+  <project path="external/roboto-fonts" name="android_external_roboto-fonts" remote="rd" revision="topaz" />
+
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" remote="rd" />
   <project path="frameworks/base" name="android_frameworks_base" remote="rd" />
@@ -78,7 +83,10 @@
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="rd" />
   <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" remote="rd" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="rd" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="rd" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="rd" />
   <project path="packages/modules/IntentResolver" name="android_packages_modules_IntentResolver" remote="rd" />
+  <project path="packages/modules/Permission" name="pa-gr/android_packages_modules_Permission" remote="github" revision="uvite" />
   <project path="packages/modules/Virtualization" name="packages_modules_Virtualization" remote="rd" />
 
   <!-- System -->
@@ -94,10 +102,12 @@
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <project path="vendor/aospa/translations" name="android_vendor_aospa_translations" remote="rd" />
+  <project path="vendor/aospa/apps/ParanoidThemePicker" name="vendor_aospa_apps_ParanoidThemePicker" remote="rd" />
   <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="rd" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="rd" />
 
   <!-- Vendor (QCOM QSSI) -->
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="rd" />
   <project path="vendor/qcom/opensource/core-utils" name="android_vendor_qcom-opensource_core-utils" remote="rd" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_commonsys-intf_display" remote="rd" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
